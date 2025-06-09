@@ -11,7 +11,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 assistant = client.beta.assistants.create(
-    name="Math Tutor2",
+    name="Math Tutor3",
     instructions="You are a math tutor capable of writing and running code to answer math questions.",
     tools=[{"type": "code_interpreter"}],
     model="gpt-4-1106-preview"
